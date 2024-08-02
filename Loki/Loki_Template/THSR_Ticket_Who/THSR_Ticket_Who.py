@@ -275,6 +275,48 @@ def testIntent():
     testLoki(inputLIST, ['THSR_Ticket_Who'])
     print("")
 
+    # arrival_time
+    print("[TEST] arrival_time")
+    inputLIST = ['8:00到','8:00能到','三點會到','8:00會抵達','九點前能到','八點會抵達','晚上八點到','抵達時間7:30','八點整之前到','早上九點前到','九月十號19:45到','九月十日11:00抵達','到達時間晚上九點','抵達時間晚上8：00','一月一日3:00能抵達','九月十號八點整前到','抵達時間九月十日11:00']
+    testLoki(inputLIST, ['arrival_time'])
+    print("")
+
+    # car_class
+    print("[TEST] car_class")
+    inputLIST = ['到高雄的商務艙','搭乘商務艙前往高雄。','前往高雄的商務艙行程。','商務艙前往高雄的安排。']
+    testLoki(inputLIST, ['car_class'])
+    print("")
+
+    # Seats_Selection
+    print("[TEST] Seats_Selection")
+    inputLIST = ['無偏好','坐哪都行','座位都可以','我想坐靠窗','我要走道的','選個窗邊位','靠走道優先','在走道的座位','我喜歡靠走道','給我靠窗座位','靠窗座位有嗎','我的座位要靠窗','座位放在同個車廂','我不要坐走道的位子','我不需要特別的座位','大家的座位放在同車廂','我希望坐在走道的座位','大家的座位安排在同車廂']
+    testLoki(inputLIST, ['Seats_Selection'])
+    print("")
+
+    # departure
+    print("[TEST] departure")
+    inputLIST = ['9:10出發','早上9:10出發','早上9:10前出發','9/10早上9:10出發的','出發時間是早上9:10','9/10上午9:10發車的。','一定要在9:10前出發。','在早上9:10之前出發。','9/10早上9:10到9:40前出發']
+    testLoki(inputLIST, ['departure'])
+    print("")
+
+    # Destination
+    print("[TEST] Destination")
+    inputLIST = ['要去台中','單程到台南','想要到臺中去','要買到台北的票','到臺南的單程車票','前往臺南的單程票','一張單程去臺南的票','打算買到臺北的票。']
+    testLoki(inputLIST, ['Destination'])
+    print("")
+
+    # From
+    print("[TEST] From")
+    inputLIST = ['起點是臺北','出發地在臺北','出發站是台北','我從臺北出發','板橋到嘉義來回','從南港出發的一張','一張從南港出發的票','從板橋到嘉義再回來','由板橋抵達嘉義後回程','從板橋前往嘉義後再返回','我要一張從左營北上的票','我要一張從雲林到苗栗的票','請給我一張從南港出發的票','從板橋出發到嘉義然後再回來','我想買一張從雲林開往苗栗的票','請給我一張從雲林到苗栗的車票']
+    testLoki(inputLIST, ['From'])
+    print("")
+
+    # Price
+    print("[TEST] Price")
+    inputLIST = ['我要到台北的票','一張學生票到台南','到高雄的票多少錢?','我要兩張到台中的票','去高雄的票要多少錢？','我想要去臺北的車票。','我想訂兩張票到臺中。','請給我兩張去臺中的票。']
+    testLoki(inputLIST, ['Price'])
+    print("")
+
 
 if __name__ == "__main__":
     # 測試所有意圖
